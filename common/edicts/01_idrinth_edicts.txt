@@ -1,0 +1,77 @@
+##########################################################################
+# Empire War Edicts
+##########################################################################
+
+@IdrinthEdictCost = 50
+@IdrinthEdictDuration = 900
+
+idrinth_war_military_solution = {
+	length = @IdrinthEdictDuration
+	resources = {
+		category = edicts
+		cost = {
+			influence = @IdrinthEdictCost
+		}
+	}
+
+	modifier = {
+		ship_fire_rate_mult = 0.1
+		ship_weapon_range_mult = 0.1
+		ship_home_territory_fire_rate_mult = 0.1
+	}
+	
+	potential = {
+        is_at_war = yes
+    }
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+idrinth_war_economic_solution = {
+	length = @IdrinthEdictDuration
+	resources = {
+		category = edicts
+		cost = {
+			influence = @IdrinthEdictCost
+		}
+	}
+
+	modifier = {
+        country_alloys_produces_mult = 0.1
+        country_energy_produces_mult = 0.1
+        armies_upkeep_mult = -0.1
+        ships_upkeep_mult = -0.1
+	}
+	
+	potential = {
+        is_at_war = yes
+    }
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+idrinth_war_propaganda_solution = {
+	length = @IdrinthEdictDuration
+	resources = {
+		category = edicts
+		cost = {
+			influence = @IdrinthEdictCost
+		}
+	}
+
+	modifier = {
+        country_war_exhaustion_mult = -0.1
+        ships_unity_produces_add = 0.1
+        armies_unity_produces_add = 0.1
+	}
+	
+	potential = {
+        is_at_war = yes
+    }
+	
+	ai_weight = {
+		weight = 10
+	}
+}

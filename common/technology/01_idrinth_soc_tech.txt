@@ -1,0 +1,34 @@
+tech_idrinth_statecraft = {
+	area = society
+	cost = @tier2cost3
+	tier = 2
+	category = { statecraft }
+	levels = 1
+	is_rare = yes
+	prerequisites = { }
+	weight = 1000
+	icon = "unknown"
+	modifier = {
+		leader_skill_levels = 1
+		num_tech_alternatives_add = 1
+		country_admin_cap_add = 5
+		job_bureaucrat_per_pop = 0.005
+	}
+}
+tech_idrinth_connected_society = {
+	area = society
+	cost = @tier3cost3
+	tier = 3
+	category = { statecraft }
+	levels = 1
+	is_rare = yes
+	prerequisites = { tech_idrinth_statecraft }
+	weight = 1000
+	icon = "unknown"
+	modifier = {
+		ruler_skill_levels = 1
+		country_naval_cap_add = 10
+		country_admin_cap_add = 5
+		job_bureaucrat_per_pop = 0.005
+	}
+}

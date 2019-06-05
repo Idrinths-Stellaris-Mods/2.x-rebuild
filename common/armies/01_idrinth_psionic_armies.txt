@@ -1,0 +1,57 @@
+siege_psionic_army = {
+	damage = 2.20
+	health = 1.75
+	morale = 1.75
+	morale_damage = 1.65
+	collateral_damage = 0.55
+	war_exhaustion = 3.00
+	time = 120
+	icon_frame = 9
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 2.5
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+tactical_psionic_army = {
+	damage = 2.00
+	health = 1.925
+	morale = 2.75
+	morale_damage = 1.5
+	collateral_damage = 0.40
+	war_exhaustion = 3.00
+	time = 120
+	icon_frame = 9
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 2.5
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+black_ops_psionic_army = {
+	damage = 2.00
+	health = 1.575
+	morale = 2.5
+	morale_damage = 1.80
+	collateral_damage = 0.45
+	war_exhaustion = 3.00
+	time = 120
+	icon_frame = 9
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 2.5
+		}
+	}
+	potential = {
+		always = no
+	}
+}

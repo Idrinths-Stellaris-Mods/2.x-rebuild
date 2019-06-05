@@ -1,0 +1,23 @@
+on_planet_attackers_win = {
+	events = {
+		idrinth_armies.100
+	}
+}
+
+on_planet_attackers_lose = {
+	events = {
+		idrinth_armies.200
+	}
+}
+
+on_planet_defenders_win = {
+	events = {
+		idrinth_armies.300
+	}
+}
+
+on_army_recruited = {
+	events = {
+		idrinth_armies.400
+	}
+}

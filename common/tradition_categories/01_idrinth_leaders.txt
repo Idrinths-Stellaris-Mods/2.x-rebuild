@@ -1,0 +1,11 @@
+tradition_idrinth_leaders = {
+	adoption_bonus = "tr_idrinth_leaders_adopt"
+	finish_bonus = "tr_idrinth_leaders_finish"
+	traditions = {
+		"tr_idrinth_leaders_eternal_service"
+		"tr_idrinth_leaders_improved_training"
+		"tr_idrinth_leaders_better_benefits"
+		"tr_idrinth_leaders_organized_ministries"
+		"tr_idrinth_leaders_better_selection"
+	}
+}

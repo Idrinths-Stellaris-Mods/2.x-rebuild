@@ -1,0 +1,273 @@
+@shipAuraRange = 80
+
+utility_component_template = {
+	key = "SHIP_AURA_EMPTY_2"
+	size = small
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	
+	component_set = "ship_aura_components_2"
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_AURA_SHIELD_DAMPENER_2"
+	size = medium
+	icon = "GFX_ship_part_aura_shield_dampener"
+	icon_frame = 1
+	power = 0
+	
+	size_restriction = { titan }
+	component_set = "ship_aura_components_2"
+	
+	hostile_aura = {
+		name = "aura_shield_dampener"
+		radius = @shipAuraRange
+		apply_on = ships
+		
+		stack_info = {
+			id = hostile_shield_dampener_2
+			priority = 1
+		}
+		
+		modifier = {
+			ship_shield_mult = -0.15
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2
+			is_ai = yes
+			is_preferred_weapons = weapon_type_energy
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_AURA_QUANTUM_DESTABILIZER_2"
+	size = medium
+	icon = "GFX_ship_part_aura_quantum_destabilizer"
+	icon_frame = 1
+	power = 0
+	
+	size_restriction = { titan }
+	component_set = "ship_aura_components_2"
+	
+	hostile_aura = {
+		name = "aura_quantum_destabilizer"
+		radius = @shipAuraRange
+		apply_on = ships
+		
+		stack_info = {
+			id = hostile_quantum_destabilizer_2
+			priority = 10
+		}
+		
+		modifier = {
+			ship_fire_rate_mult = -0.075
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity" 
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_AURA_SUBSPACE_SNARE_2"
+	size = medium
+	icon = "GFX_ship_part_aura_snare"
+	icon_frame = 1
+	power = 0
+	
+	size_restriction = { titan }
+	component_set = "ship_aura_components_2"
+	
+	hostile_aura = {
+		name = "aura_ship_subspace_snare"
+		radius = @shipAuraRange
+		apply_on = fleets
+		
+		stack_info = {
+			id = hostile_snare_aura_2
+			priority = 1
+		}
+		
+		modifier = {
+			ship_emergency_ftl_min_days_mult = 0.75
+			ship_disengage_chance_mult = -0.15
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"   
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_AURA_INSPIRING_PRESENCE_2"
+	size = medium
+	icon = "GFX_ship_part_aura_nanobot"
+	icon_frame = 1
+	power = 0
+	
+	size_restriction = { titan }
+	component_set = "ship_aura_components_2"
+	
+	friendly_aura = {
+		name = "aura_inspiring_presence"
+		radius = @shipAuraRange
+		apply_on = ships
+		
+		stack_info = {
+			id = friendly_inspiring_presence_2
+			priority = 20
+		}
+		
+		modifier = {
+			ship_fire_rate_mult = 0.0375
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_AURA_TARGETING_GRID_2"
+	size = medium
+	icon = "GFX_ship_part_aura_nanobot"
+	icon_frame = 1
+	power = 0
+	
+	size_restriction = { titan }
+	component_set = "ship_aura_components_2"
+	
+	friendly_aura = {
+		name = "aura_targeting_grid"
+		radius = @shipAuraRange
+		apply_on = ships
+		
+		stack_info = {
+			id = friendly_targeting_grid_2
+			priority = 20
+		}
+		
+		modifier = {
+			ship_tracking_add = 7.5
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2.0
+			is_ai = yes
+			is_preferred_weapons = weapon_type_kinetic
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_AURA_NANOBOT_CLOUD_2"
+	size = medium
+	icon = "GFX_ship_part_aura_nanobot"
+	icon_frame = 1
+	power = 0
+	
+	size_restriction = { titan }
+	component_set = "ship_aura_components_2"
+	
+	friendly_aura = {
+		name = "aura_nanobot_cloud"
+		radius = @shipAuraRange
+		apply_on = ships
+		
+		stack_info = {	
+			id = friendly_nanobot_cloud_2
+			priority = 20
+		}
+		
+		modifier = {
+			ship_hull_regen_add_static = 0.75
+			ship_armor_regen_add_static = 2.25
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}

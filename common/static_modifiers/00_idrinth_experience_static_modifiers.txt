@@ -1,0 +1,57 @@
+##########################################################################
+# Rank modifiers
+##########################################################################
+army_rank_regular = {
+	army_morale = 0.1
+	army_damage_mult = -0.1
+}
+army_rank_experienced = {
+	army_damage_mult = 0.15
+	army_morale = 0.2
+	army_collateral_damage_mult = -0.05
+}
+
+army_rank_veteran = {
+	army_health = 0.15
+	army_morale_damage_mult = 0.1
+	army_damage_mult = 0.3
+	army_morale = 0.4
+	army_collateral_damage_mult = -0.1
+}
+
+army_rank_elite = {
+	army_health = 0.3
+	army_morale_damage_mult = 0.2
+	army_damage_mult = 0.6
+	army_morale = 0.8
+	army_collateral_damage_mult = -0.2
+	army_defense_damage_mult = 0.05
+}
+
+ship_rank_regular = {
+	ship_fire_rate_mult = 0.1
+	ship_hull_mult = -0.1
+}
+ship_rank_experienced = {
+	ship_weapon_damage = 0.1
+	ship_fire_rate_mult = 0.05
+}
+
+ship_rank_veteran = {
+	ship_weapon_damage = 0.2
+	ship_fire_rate_mult = 0.1
+	ship_hull_mult = 0.05
+	ship_shield_mult = 0.05
+	ship_armor_mult = 0.05
+	ship_evasion_mult = 0.05
+}
+
+ship_rank_elite = {
+	ship_weapon_damage = 0.4
+	ship_fire_rate_mult = 0.2
+	ship_hull_mult = 0.10
+	ship_shield_mult = 0.10
+	ship_armor_mult = 0.10
+	ship_evasion_mult = 0.10
+	ship_weapon_range_mult = 0.05
+}

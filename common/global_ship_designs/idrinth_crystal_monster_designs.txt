@@ -1,0 +1,132 @@
+ship_design = {
+	name = "crystal_ship_small_idrinth"
+	ship_size = crystal_ship_small_blue
+	hide_size = yes
+
+	section = {
+		template = "crystal_ship_small_blue_section"
+		slot = "mid"
+		
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_UTILITY_1"
+			template = "SMALL_CRYSTAL_ARMOR_1"
+		}
+		component = {
+			slot = "SMALL_UTILITY_2"
+			template = "SMALL_CRYSTAL_ARMOR_1"
+		}		
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+	}
+	
+	required_component="BIO_PROPULSION"
+	required_component="BIO_DRIVE"
+}
+
+ship_design = {
+	name = "crystal_ship_medium_idrinth"
+	ship_size = crystal_ship_medium_blue
+	hide_size = yes
+
+	section = {
+		template = "crystal_ship_medium_blue_section"
+		slot = "mid"
+		
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_UTILITY_1"
+			template = "SMALL_CRYSTAL_ARMOR_1"
+		}
+		component = {
+			slot = "SMALL_UTILITY_2"
+			template = "SMALL_CRYSTAL_ARMOR_1"
+		}		
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+	}
+	
+	required_component="BIO_PROPULSION"
+	required_component="BIO_DRIVE"
+}
+
+ship_design = {
+	name = "crystal_ship_large_idrinth"
+	ship_size = crystal_ship_large_blue
+	hide_size = yes
+
+	section = {
+		template = "crystal_ship_large_blue_section"
+		slot = "mid"
+		
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_CRYSTAL_SHIP_RED_LIGHTNING"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_CRYSTAL_SHIP_RED_LIGHTNING"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_CRYSTAL_SHIP_RED_LIGHTNING"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_CRYSTAL_SHIP_RED_LIGHTNING"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_CRYSTAL_SHIP_RED_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_UTILITY_1"
+			template = "SMALL_CRYSTAL_ARMOR_1"
+		}
+		component = {
+			slot = "SMALL_UTILITY_2"
+			template = "SMALL_CRYSTAL_ARMOR_1"
+		}		
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+	}
+	
+	required_component="BIO_PROPULSION"
+	required_component="BIO_DRIVE"
+}

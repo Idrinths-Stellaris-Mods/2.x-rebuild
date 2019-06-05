@@ -1,0 +1,5 @@
+on_monthly_pulse = {
+	events = {
+		idrinth_wars.1
+	}
+}

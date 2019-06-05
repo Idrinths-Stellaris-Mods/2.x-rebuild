@@ -1,0 +1,89 @@
+tech_repeatable_idrinth_ship_evasion = {
+	area = engineering
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { propulsion }
+	levels = 10
+	prerequisites = { }
+	weight = @repeatableTechWeight
+	icon = "unknown"
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		ship_evasion_mult = 0.04
+	}
+}
+tech_repeatable_idrinth_improved_jumpdrives = {
+	area = engineering
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { propulsion }
+	levels = 10
+	prerequisites = { }
+	weight = @repeatableTechWeight
+	icon = "unknown"
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		ship_ftl_jumpdrive_range_mult = 0.02
+	}
+}
+tech_repeatable_idrinth_ship_repair = {
+	area = engineering
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { industry }
+	levels = 5
+	prerequisites = { }
+	weight = @repeatableTechWeight
+	icon = "unknown"
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		ship_shield_regen_add_perc = 0.01
+		ship_armor_regen_add_perc = 0.01
+		ship_hull_regen_add_perc = 0.01
+	}
+}

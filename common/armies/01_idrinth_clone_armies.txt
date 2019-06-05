@@ -1,0 +1,60 @@
+siege_clone_army = {
+	damage = 1.10
+	health = 1.00
+	morale = 0.70
+	morale_damage = 1.10
+	collateral_damage = 1.375
+	war_exhaustion = 0.5
+	time = 30
+	pop_limited = no
+	icon_frame = 7
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 0.75
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+tactical_clone_army = {
+	damage = 1.00
+	health = 1.10
+	morale = 1.10
+	morale_damage = 1.00
+	collateral_damage = 1
+	war_exhaustion = 0.5
+	time = 30
+	pop_limited = no
+	icon_frame = 7
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 0.75
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+black_ops_clone_army = {
+	damage = 1.00
+	health = 0.90
+	morale = 1.00
+	morale_damage = 1.20
+	collateral_damage = 1.125
+	war_exhaustion = 0.5
+	time = 30
+	pop_limited = no
+	icon_frame = 7
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 0.75
+		}
+	}
+	potential = {
+		always = no
+	}
+}

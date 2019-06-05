@@ -1,0 +1,21 @@
+namespace = idrinth_wars
+
+event = {
+    id = idrinth_wars.1
+    is_triggered_only = yes
+    hide_window = yes
+    hide_window = yes
+    immediate = {
+        #every_country = {
+        #    limit = { is_at_war = yes }
+        #    add_modifier = { modifier = idrinth_war_readiness }
+        #}
+        every_country = {
+            limit = {
+                is_at_war = no
+                has_modifier = idrinth_war_readiness
+            }
+            remove_modifier =idrinth_war_readiness
+        }
+    }
+}

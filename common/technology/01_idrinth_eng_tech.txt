@@ -1,0 +1,31 @@
+tech_idrinth_better_propulsion = {
+	area = engineering
+	cost = @tier2cost3
+	tier = 2
+	category = { propulsion }
+	levels = 1
+	is_rare = yes
+	prerequisites = { }
+	weight = 1000
+	icon = "unknown"
+	modifier = {
+		ship_speed_mult = 0.15
+	}
+}
+tech_idrinth_automatic_engineering_support_ai = {
+	area = engineering
+	cost = @tier3cost3
+	tier = 3
+	category = { propulsion }
+	levels = 1
+	is_rare = yes
+	prerequisites = { }
+	weight = 1000
+	icon = "unknown"
+	modifier = {
+		ship_hull_regen_add_perc   = 0.005
+		ship_hull_mult             = 0.005
+		ship_armor_regen_add_perc  = 0.005
+		ship_hull_regen_add_static = 1
+	}
+}

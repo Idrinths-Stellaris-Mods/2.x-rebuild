@@ -1,0 +1,17 @@
+tech_idrinth_ship_adjustments = {
+	area = society
+	cost = 0
+	tier = 0
+	start_tech = yes
+	category = { military_theory }
+	modifier = {
+		ship_shield_regen_add_perc = 0.001
+		ship_armor_regen_add_perc = 0.001
+		ship_hull_regen_add_perc = 0.001
+	}
+	icon = "unknown"
+	feature_flags = {
+   		tech_automated_exploration
+		experimental_subspace_navigation
+  	}
+}

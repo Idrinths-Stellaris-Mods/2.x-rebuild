@@ -1,0 +1,12 @@
+namespace = idrinthplanetmodifications
+
+planet_event = {
+	id = idrinthplanetmodifications.1
+	hide_window = yes
+	is_triggered_only = yes
+	location = ROOT
+	
+    immediate = {
+        change_planet_size = 1
+	}
+}

@@ -1,0 +1,161 @@
+idrinth_civilian_ship_access_restricted =
+{
+	potential = {
+		has_policy_flag = idrinth_civilian_ship_access_restricted
+	}
+	
+	weight = {
+		weight = 10
+	}
+	
+	conversion_rate = {
+		energy           = 0.05
+		society_research = 0.025
+	}
+
+	economic_category = idrinth_civilian_ship_access
+}
+
+idrinth_civilian_ship_access_payed =
+{
+	potential = {
+		has_policy_flag = idrinth_civilian_ship_access_restricted
+	}
+	
+	weight = {
+		weight = 10
+	}
+	
+	conversion_rate = {
+		energy = 0.075
+	}
+
+	economic_category = idrinth_civilian_ship_access
+}
+
+idrinth_civilian_ship_access_unlimited =
+{
+	potential = {
+		has_policy_flag = idrinth_civilian_ship_access_restricted
+	}
+	
+	weight = {
+		weight = 10
+	}
+	
+	conversion_rate = {
+		society_research     = 0.025
+		physics_research     = 0.025
+		engineering_research = 0.025
+	}
+
+	economic_category = idrinth_civilian_ship_access
+}
+
+idrinth_civilian_ship_access_armed =
+{
+	potential = {
+		has_policy_flag = idrinth_civilian_ship_access_armed
+	}
+	
+	weight = {
+		weight = 10
+	}
+	
+	conversion_rate = {
+		minerals = 0.05
+		alloys   = 0.025
+	}
+
+	economic_category = idrinth_civilian_ship_access
+}
+
+idrinth_civilian_ship_access_automated =
+{
+	potential = {
+		has_policy_flag = idrinth_civilian_ship_access_automated
+	}
+	
+	weight = {
+		weight = 10
+	}
+	
+	conversion_rate = {
+		engineering_research = 0.05
+		physics_research     = 0.025
+	}
+
+	economic_category = idrinth_civilian_ship_access
+}
+
+idrinth_civilian_ship_access_sponsored =
+{
+	potential = {
+		has_policy_flag = idrinth_civilian_ship_access_sponsored
+	}
+	
+	weight = {
+		weight = 10
+	}
+	
+	conversion_rate = {
+		society_research = 0.05
+		unity            = 0.025
+	}
+
+	economic_category = idrinth_civilian_ship_access
+}
+
+idrinth_civilian_ship_access_assisted =
+{
+	potential = {
+		has_policy_flag = idrinth_civilian_ship_access_assisted
+	}
+	
+	weight = {
+		weight = 10
+	}
+	
+	conversion_rate = {
+		society_research =  0.025
+		unity            =  0.025
+		food		 =  0.025
+	}
+
+	economic_category = idrinth_civilian_ship_access
+}
+
+idrinth_civilian_ship_access_observed =
+{
+	potential = {
+		has_policy_flag = idrinth_civilian_ship_access_observed
+	}
+	
+	weight = {
+		weight = 10
+	}
+	
+	conversion_rate = {
+		unity	=  0.025
+		energy  =  0.05
+	}
+
+	economic_category = idrinth_civilian_ship_access
+}
+
+idrinth_civilian_ship_access_free =
+{
+	potential = {
+		has_policy_flag = idrinth_civilian_ship_access_free
+	}
+	
+	weight = {
+		weight = 10
+	}
+	
+	conversion_rate = {
+		society_research =  0.075
+	}
+
+	economic_category = idrinth_civilian_ship_access
+}

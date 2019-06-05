@@ -1,0 +1,27 @@
+# No scope, like on_game_start
+on_monthly_pulse = {
+	events = {
+		idrinthcreatures.1
+	}
+}
+
+# No scope, like on_game_start
+on_mid_game_pulse = {
+	events = {
+		idrinthcreatures.2
+	}
+}
+
+# No scope, like on_game_start
+on_late_game_pulse = {
+	events = {
+		idrinthcreatures.3
+	}
+}
+
+# No scope
+on_game_start = {
+	events = {
+		idrinthcreatures.5
+	}
+}

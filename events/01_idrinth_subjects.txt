@@ -1,0 +1,195 @@
+namespace = idrinthsubjects
+
+event = {
+	id = idrinthsubjects.1
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			limit = { is_subject = yes }
+			# AUTHORITARIAN
+			if = {
+				limit = { overlord = { has_ethic = "ethic_fanatic_authoritarian" } }
+				add_modifier = { modifier = idrinth_fanatic_authoritarian_overlord days = 30}
+			}
+			if = {
+				limit = { overlord = { has_ethic = ethic_authoritarian } }
+				add_modifier = { modifier = idrinth_authoritarian_overlord days = 30}
+			}
+			# EGALITARIAN
+			if = {
+				limit = { overlord = { has_ethic = "ethic_fanatic_egalitarian" } }
+				add_modifier = { modifier = idrinth_fanatic_egalitarian_overlord days = 30}
+			}
+			if = {
+				limit = { overlord = { has_ethic = "ethic_egalitarian" } }
+				add_modifier = { modifier = idrinth_egalitarian_overlord days = 30}
+			}
+			# XENOPHOBE
+			if = {
+				limit = { overlord = { has_ethic = "ethic_fanatic_xenophobe" } }
+				add_modifier = { modifier = idrinth_fanatic_xenophobe_overlord days = 30}
+			}
+			if = {
+				limit = { overlord = { has_ethic = "ethic_xenophobe" } }
+				add_modifier = { modifier = idrinth_xenophobe_overlord days = 30}
+			}
+			# XENOPHILE
+			if = {
+				limit = { overlord = { has_ethic = "ethic_fanatic_xenophile" } }
+				add_modifier = { modifier = idrinth_fanatic_xenophile_overlord days = 30}
+			}
+			if = {
+				limit = { overlord = { has_ethic = "ethic_xenophile" } }
+				add_modifier = { modifier = idrinth_xenophile_overlord days = 30}
+			}
+			# MILITARIST
+			if = {
+				limit = { overlord = { has_ethic = "ethic_fanatic_militarist" } }
+				add_modifier = { modifier = idrinth_fanatic_militarist_overlord days = 30}
+			}
+			if = {
+				limit = { overlord = { has_ethic = "ethic_militarist" } }
+				add_modifier = { modifier = idrinth_militarist_overlord days = 30}
+			}
+			# PACIFIST
+			if = {
+				limit = { overlord = { has_ethic = "ethic_fanatic_pacifist" } }
+				add_modifier = { modifier = idrinth_fanatic_pacifist_overlord days = 30}
+			}
+			if = {
+				limit = { overlord = { has_ethic = "ethic_pacifist" } }
+				add_modifier = { modifier = idrinth_pacifist_overlord days = 30}
+			}
+			# MATERIALIST
+			if = {
+				limit = { overlord = { has_ethic = "ethic_fanatic_materialist" } }
+				add_modifier = { modifier = idrinth_fanatic_materialist_overlord days = 30}
+			}
+			if = {
+				limit = { overlord = { has_ethic = "ethic_materialist" } }
+				add_modifier = { modifier = idrinth_materialist_overlord days = 30}
+			}
+			# SPIRITUALIST
+			if = {
+				limit = { overlord = { has_ethic = "ethic_fanatic_spiritualist" } }
+				add_modifier = { modifier = idrinth_fanatic_spiritualist_overlord days = 30}
+			}
+			if = {
+				limit = { overlord = { has_ethic = "ethic_spiritualist" } }
+				add_modifier = { modifier = idrinth_spiritualist_overlord days = 30}
+			}
+			# GESTALT
+			if = {
+				limit = { overlord = { has_ethic = "ethic_gestalt_consciousness" } }
+				add_modifier = { modifier = idrinth_authoritarian_overlord days = 30}
+				add_modifier = { modifier = idrinth_militarist_overlord days = 30}
+				add_modifier = { modifier = idrinth_xenophile_overlord days = 30}
+				add_modifier = { modifier = idrinth_materialist_overlord days = 30}
+			}
+		}
+	}
+}
+
+event = {
+	id = idrinthsubjects.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_ai = yes
+			}
+			country_event = {
+				id = idrinthsubjects.3
+			}
+		}
+	}
+}
+country_event = {
+	id = idrinthsubjects.3
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_modifier = idrinth_captain_earlygame_subject
+		remove_modifier = idrinth_captain_midgame_subject
+		remove_modifier = idrinth_captain_endgame_subject
+
+		remove_modifier = idrinth_grand_admiral_earlygame_subject
+		remove_modifier = idrinth_grand_admiral_midgame_subject
+		remove_modifier = idrinth_grand_admiral_endgame_subject
+
+		remove_modifier = idrinth_admiral_earlygame_subject
+		remove_modifier = idrinth_admiral_midgame_subject
+		remove_modifier = idrinth_admiral_endgame_subject
+
+		remove_modifier = idrinth_commodore_earlygame_subject
+		remove_modifier = idrinth_commodore_midgame_subject
+		remove_modifier = idrinth_commodore_endgame_subject
+		if = {
+			limit = {
+				is_ai = yes
+				is_subject = yes
+				overlord = { is_ai = no }
+			}
+			switch = {
+				trigger = is_difficulty
+				2 = {
+					if = {
+						limit = { has_global_flag = idrinth_in_lategame }
+						add_modifier = { modifier = idrinth_commodore_endgame_subject }
+					}
+					else_if = {
+						limit = { has_global_flag = idrinth_in_midgame }
+						add_modifier = { modifier = idrinth_commodore_midgame_subject }
+					}
+					else = {
+						add_modifier = { modifier = idrinth_commodore_earlygame_subject }
+					}
+				}
+				3 = {
+					if = {
+						limit = { has_global_flag = idrinth_in_lategame }
+						add_modifier = { modifier = idrinth_captain_endgame_subject }
+					}
+					else_if = {
+						limit = { has_global_flag = idrinth_in_midgame }
+						add_modifier = { modifier = idrinth_captain_midgame_subject }
+					}
+					else = {
+						add_modifier = { modifier = idrinth_captain_earlygame_subject }
+					}
+				}
+				4 = {
+					if = {
+						limit = { has_global_flag = idrinth_in_lategame }
+						add_modifier = { modifier = idrinth_admiral_endgame_subject }
+					}
+					else_if = {
+						limit = { has_global_flag = idrinth_in_midgame }
+						add_modifier = { modifier = idrinth_admiral_midgame_subject }
+					}
+					else = {
+						add_modifier = { modifier = idrinth_admiral_earlygame_subject }
+					}
+				}
+				5 = {
+					if = {
+						limit = { has_global_flag = idrinth_in_lategame }
+						add_modifier = { modifier = idrinth_grand_admiral_endgame_subject }
+					}
+					else_if = {
+						limit = { has_global_flag = idrinth_in_midgame }
+						add_modifier = { modifier = idrinth_grand_admiral_midgame_subject }
+					}
+					else = {
+						add_modifier = { modifier = idrinth_grand_admiral_earlygame_subject }
+					}
+				}
+			}
+		}
+	}
+}

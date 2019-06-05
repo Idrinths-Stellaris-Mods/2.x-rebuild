@@ -1,0 +1,5 @@
+idrinth_war_readiness = {
+    shipclass_starbase_hull_mult = 0.001
+    shipclass_starbase_damage_mult = 0.001
+    pop_defense_armies_add = 0.001
+}

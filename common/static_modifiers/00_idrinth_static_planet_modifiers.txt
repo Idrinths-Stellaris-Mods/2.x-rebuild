@@ -1,0 +1,43 @@
+##########################################################################
+# Planet Modifiers
+##########################################################################
+idrinth_planet_expanding = {
+	planets_minerals_produces_add = 5
+	icon_frame = 1
+}
+idrinth_planet_expanded = {
+	planet_max_districts_add = 1
+	icon_frame = 1
+}
+idrinth_planet_size_add = {
+	planets_minerals_produces_add = -5
+	planets_energy_produces_add = -5
+	icon_frame = 1
+}
+idrinth_habiltability = {
+	pop_environment_tolerance = 0.1
+	planets_energy_produces_add = -5
+	icon_frame = 1
+}
+idrinth_habiltability2 = {
+	pop_environment_tolerance = 0.1
+	planets_energy_produces_add = -15
+	icon_frame = 1
+}
+assist_research = {
+	planet_jobs_physics_research_produces_mult = 0.10
+	planet_jobs_society_research_produces_mult = 0.10
+	planet_jobs_engineering_research_produces_mult = 0.10
+	planet_sensor_range_add = 1
+	planets_physics_research_produces_add = 1
+	planets_society_research_produces_add = 1
+	planets_engineering_research_produces_add = 1
+	icon = "gfx/interface/icons/planet_modifiers/pm_assist_research.dds"
+	icon_frame = 1
+}
+idrinth_armies_won_defense = {
+	army_defense_morale_mult = 0.25
+}
+idrinth_armies_failed_invasion = {
+	army_attack_morale_mult = -0.1
+}

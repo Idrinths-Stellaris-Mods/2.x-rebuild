@@ -1,0 +1,238 @@
+tech_automated_exploration = {
+	area = physics
+	tier = 1
+	cost = @tier1cost2
+	category = { computing }
+	weight = @tier1weight2
+	
+	modifier = {
+		science_ship_survey_speed = 0.3
+		shipclass_science_ship_build_speed_mult = 0.05
+		shipclass_science_ship_build_cost_mult = -0.05
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		
+		modifier = {
+			factor = 0
+			years_passed < 5
+		}
+		
+		modifier = {
+			factor = 2.0
+			is_ai = no
+			years_passed > 10
+		}
+		
+		modifier = {
+			factor = 2.0
+			is_ai = no
+			years_passed > 15
+		}
+		
+		modifier = {
+			factor = 2.0
+			is_ai = no
+			years_passed > 20
+		}
+		
+		modifier = {
+			factor = 2.0
+			num_owned_planets > 5
+		}
+		
+		modifier = {
+			factor = 2.0
+			num_owned_planets > 10
+		}
+		
+		modifier = {
+			factor = 2.0
+			num_owned_planets > 15
+		}
+		
+		modifier = {
+			factor = 2.0
+			num_owned_planets > 20
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}
+
+tech_experimental_subspace_navigation = {
+	area = physics
+	cost = @tier2cost3
+	category = { field_manipulation }
+	tier = 2
+	is_rare = yes
+	prerequisites = { tech_sensors_2 }
+	weight = @tier2weight2
+	
+	modifier = {
+		ship_windup_mult = -0.1
+        ship_winddown_mult = -0.1
+        ship_interstellar_speed_mult = 0.1
+	}
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 4 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+tech_destroyers = {
+	cost = 0
+	area = engineering
+	tier = 0
+	category = { voidcraft }	
+	gateway = ship
+	start_tech = yes
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_DESTROYER_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_DESTROYER_CONSTRUCTION_DESC"
+		}
+	}
+}
+
+tech_cruisers = {
+	cost = 0
+	area = engineering
+	tier = 0
+	category = { voidcraft }
+	gateway = ship
+	start_tech = yes
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_CRUISER_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_CRUISER_CONSTRUCTION_DESC"
+		}
+	}
+}
+
+tech_battleships = {
+	cost = 0
+	area = engineering
+	tier = 0
+	category = { voidcraft }
+	start_tech = yes
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_BATTLESHIP_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_BATTLESHIP_CONSTRUCTION_DESC"
+		}
+	}
+}
+
+tech_repeatable_warships = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	is_rare = yes
+	levels = 5
+	cost_per_level = @tier2cost3
+	
+	modifier = {
+		country_command_limit_add = 10
+		ship_titan_cost_mult = -0.05
+		ship_battleship_cost_mult = -0.04
+		ship_cruiser_cost_mult = -0.03
+		ship_destroyer_cost_mult = -0.02
+		ship_corvette_cost_mult = -0.01
+	}
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 50 }
+		}	
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_battleships
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+		modifier = {
+			factor = 3
+			years_passed > 65
+		}
+		modifier = {
+			factor = 4
+			years_passed > 70
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 100
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}

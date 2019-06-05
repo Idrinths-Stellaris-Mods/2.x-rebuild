@@ -1,0 +1,6 @@
+on_monthly_pulse = {
+	events = {
+		idrinthsubjects.1
+		idrinthsubjects.2
+	}
+}

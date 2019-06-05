@@ -1,0 +1,47 @@
+##########################################################################
+# Leader Skill Modifiers
+##########################################################################
+
+skill_admiral = {
+	ship_fire_rate_mult = 0.03
+	ship_accuracy_mult = 0.01
+	ship_evasion_mult = 0.01
+	ship_tracking_mult = 0.01
+	leader_age = 1
+}
+
+skill_general = {
+	army_damage_mult = 0.05
+	army_health = 0.05
+	army_morale = 0.05
+	leader_age = 1
+}
+
+skill_scientist = {
+	all_technology_research_speed = 0.025
+	science_ship_survey_speed = 0.10
+	ship_anomaly_generation_chance_mult = 0.025
+	leader_age = 1
+}
+
+skill_governor = {
+	planet_jobs_produces_mult = 0.02
+	planet_crime_add = -3
+	planet_buildings_upkeep_mult = -0.01
+	army_defense_health_mult = 0.025
+	job_bureaucrat_per_pop = 0.01
+	pop_growth_speed = 0.01
+	planet_pop_assembly_mult = 0.01
+	leader_age = 1
+}
+
+skill_ruler = {
+	edict_length_mult = 0.05
+	leaders_upkeep_mult = -0.025
+	country_unity_produces_mult = 0.03
+	job_soldier_per_pop = 0.005
+	leader_age = 1.5
+	country_trust_cap_add = 1
+	country_naval_cap_mult = 0.01
+	country_war_exhaustion_mult = -0.01
+}

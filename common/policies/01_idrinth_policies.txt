@@ -1,0 +1,169 @@
+idrinth_civilian_ship_access = {
+
+	potential = {
+		OR = {
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+		}
+	}
+	
+	# authoritarian or xenophobe or militarist
+	option = {
+		name = "idrinth_civilian_ship_access_restricted"
+		policy_flags = {
+			idrinth_civilian_ship_access_restricted
+		}
+		valid = {
+			OR = {
+				has_ethic = "ethic_authoritarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_xenophobe"
+				has_ethic = "ethic_fanatic_xenophobe"
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+			}
+		}
+	}
+	
+	# egalitarian or materialist or pacifist
+	option = {
+		name = "idrinth_civilian_ship_access_payed"
+		policy_flags = {
+			idrinth_civilian_ship_access_payed
+		}
+		valid = {
+			OR = {
+				has_ethic = "ethic_egalitarian"
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_materialist"
+				has_ethic = "ethic_fanatic_materialist"
+				has_ethic = "ethic_pacifist"
+				has_ethic = "ethic_fanatic_pacifist"
+			}
+		}
+	}
+	
+	# gestalt or xenophile or pacifist
+	option = {
+		name = "idrinth_civilian_ship_access_unlimited"
+		policy_flags = {
+			idrinth_civilian_ship_access_unlimited
+		}
+		valid = {
+			OR = {
+				has_ethic = "ethic_gestalt_consciousness"
+				has_ethic = "ethic_xenophile"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_pacifist"
+				has_ethic = "ethic_fanatic_pacifist"
+			}
+		}
+	}
+	
+	# gestalt or materialist or militarist
+	option = {
+		name = "idrinth_civilian_ship_access_armed"
+		policy_flags = {
+			idrinth_civilian_ship_access_armed
+		}
+		valid = {
+			OR = {
+				has_ethic = "ethic_gestalt_consciousness"
+				has_ethic = "ethic_materialist"
+				has_ethic = "ethic_fanatic_materialist"
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+			}
+		}
+	}
+	
+	# gestalt or materialist or authoritarian
+	option = {
+		name = "idrinth_civilian_ship_access_automated"
+		policy_flags = {
+			idrinth_civilian_ship_access_automated
+		}
+		valid = {
+			OR = {
+				has_ethic = "ethic_gestalt_consciousness"
+				has_ethic = "ethic_materialist"
+				has_ethic = "ethic_fanatic_materialist"
+				has_ethic = "ethic_authoritarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+			}
+		}
+	}
+	
+	# egalitarian or xenophile or spiritualist
+	option = {
+		name = "idrinth_civilian_ship_access_sponsored"
+		policy_flags = {
+			idrinth_civilian_ship_access_sponsored
+		}
+		valid = {
+			OR = {
+				has_ethic = "ethic_egalitarian"
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_xenophile"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+	}
+	
+	# xenophobe or militarist or spiritualist
+	option = {
+		name = "idrinth_civilian_ship_access_assisted"
+		policy_flags = {
+			idrinth_civilian_ship_access_assisted
+		}
+		valid = {
+			OR = {
+				has_ethic = "ethic_xenophobe"
+				has_ethic = "ethic_fanatic_xenophobe"
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+	}
+	
+	# authoritarian or xenophile or pacifist
+	option = {
+		name = "idrinth_civilian_ship_access_observed"
+		policy_flags = {
+			idrinth_civilian_ship_access_observed
+		}
+		valid = {
+			OR = {
+				has_ethic = "ethic_authoritarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_xenophile"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_pacifist"
+				has_ethic = "ethic_fanatic_pacifist"
+			}
+		}
+	}
+	
+	# egalitarian or xenophobe or spiritualist
+	option = {
+		name = "idrinth_civilian_ship_access_free"
+		policy_flags = {
+			idrinth_civilian_ship_access_free
+		}
+		valid = {
+			OR = {
+				has_ethic = "ethic_egalitarian"
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_xenophobe"
+				has_ethic = "ethic_fanatic_xenophobe"
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+	}
+}

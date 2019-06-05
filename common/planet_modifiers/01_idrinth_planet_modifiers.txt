@@ -1,0 +1,30 @@
+pm_idrinth_planet_expanded = {
+	spawn_chance = {
+		value = 0
+	}
+	modifier = idrinth_planet_expanded
+}
+pm_idrinth_planet_expanding = {
+	spawn_chance = {
+		value = 0
+	}
+	modifier = idrinth_planet_expanding
+}
+pm_idrinth_planet_size_add = {
+	spawn_chance = {
+		value = 0
+	}
+	modifier = idrinth_planet_size_add
+}
+pm_idrinth_habiltability = {
+	spawn_chance = {
+		value = 0
+	}
+	modifier = idrinth_habiltability
+}
+pm_idrinth_habiltability2 = {
+	spawn_chance = {
+		value = 0
+	}
+	modifier = idrinth_habiltability2
+}

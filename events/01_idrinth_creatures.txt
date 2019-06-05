@@ -1,0 +1,752 @@
+namespace = idrinthcreatures
+
+event = {
+	id = idrinthcreatures.1
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+	immediate = {
+  		random_system = {
+			limit = {
+				is_star_class = sc_black_hole
+			}
+			save_event_target_as = idrinth_creature_spawn
+			random_country = {
+				limit = {
+					OR = {
+						is_country_type = amoeba
+						is_country_type = crystal
+						is_country_type = drone
+						is_country_type = cloud
+					}
+				}
+				random_list = {
+					10 = {}
+					1 = {
+						modifier = {
+							factor = 1.1
+							has_global_flag = idrinth_past_100
+						}
+						modifier = {
+							factor = 1.2
+							has_global_flag = idrinth_past_200
+						}
+						modifier = {
+							factor = 1.4
+							has_global_flag = idrinth_past_300
+						}
+						modifier = {
+							factor = 1.8
+							has_global_flag = idrinth_past_400
+						}
+						modifier = {
+							factor = 2.6
+							has_global_flag = idrinth_past_500
+						}
+						modifier = {
+							factor = 2
+							has_global_flag = l_cluster_opened
+						}
+						modifier = {
+							factor = 1.5
+							has_global_flag = vultaum_system_discovered
+						}
+						modifier = {
+							factor = 1.5
+							has_global_flag = yuht_system_discovered
+						}
+						modifier = {
+							factor = 1.5
+							has_global_flag = first_league_discovered
+						}
+						modifier = {
+							factor = 1.5
+							has_global_flag = irassia_discovered
+						}
+						modifier = {
+							factor = 1.5
+							has_global_flag = cybrex_discovered
+						}
+						modifier = {
+							factor = 2
+							has_global_flag = great_khan_dead
+						}
+						modifier = {
+							factor = 2
+							has_global_flag = xuracorp_destroyed
+						}
+						modifier = {
+							factor = 2
+							has_global_flag = riggans_destroyed
+						}
+						modifier = {
+							factor = 2
+							has_global_flag = muutagans_destroyed
+						}
+						modifier = {
+							factor = 7
+							has_global_flag = cybrex_destroyed
+						}
+						modifier = {
+							factor = 2
+							has_global_flag = extradimensional_first_portal_destroyed
+						}
+						modifier = {
+							factor = 2
+							has_global_flag = extradimensional_second_portal_destroyed
+						}
+						modifier = {
+							factor = 2
+							has_global_flag = extradimensional_third_portal_destroyed
+						}
+						modifier = {
+							factor = 4
+							NOR = {
+								any_country = {
+									is_country_type = swarm
+								}
+								has_global_flag = prethoryn_arrival
+							}
+						}
+						modifier = {
+							factor = 5
+							has_global_flag = idrinth_in_midgame
+						}
+						modifier = {
+							factor = 5
+							has_global_flag = idrinth_in_lategame
+						}
+						country_event = { id = idrinthcreatures.100 }
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = idrinthcreatures.100
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+    	immediate = {
+		give_technology = { tech = tech_repeatable_idrinth_spawn_scaling }
+		if = {
+			limit = {is_country_type = amoeba}
+			country_event = { id = idrinthcreatures.101 }
+		}
+		if = {
+			limit = {is_country_type = crystal}
+			country_event = { id = idrinthcreatures.102 }
+		}
+		if = {
+			limit = {is_country_type = drone}
+			country_event = { id = idrinthcreatures.103 }
+		}
+		if = {
+			limit = {is_country_type = cloud}
+			country_event = { id = idrinthcreatures.104 }
+		}
+	}
+}
+country_event = {
+	id = idrinthcreatures.101
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+    immediate = {
+		create_fleet = {
+			name = "NAME_Space_Amoeba"
+			effect = {
+				set_owner = event_target:amoeba_country
+				create_ship = {
+					name = "NAME_Ortus"
+					design = "NAME_Large_Space_Organism_Orange"
+				}
+				create_ship = {
+					name = "NAME_Oriens"
+					design = "NAME_Large_Space_Organism_Orange"
+				}
+				create_ship = {
+					name = "NAME_Cortus"
+					design = "NAME_Large_Space_Organism_Orange"
+				}
+				random_list = {
+					40 = { }
+					40 = {
+						create_ship = {
+							name = "NAME_Ortus"
+							design = "NAME_Large_Space_Organism_Orange"
+						}
+					}
+					20 = {
+						create_ship = {
+							name = "NAME_Ortus"
+							design = "NAME_Large_Space_Organism_Orange"
+						}
+						create_ship = {
+							name = "NAME_Ortus"
+							design = "NAME_Large_Space_Organism_Orange"
+						}
+					}
+				}
+				if = {
+					limit = { has_global_flag = idrinth_in_midgame }
+					create_ship = {
+						name = "NAME_Ortus"
+						design = "NAME_Large_Space_Organism_Orange"
+					}
+					create_ship = {
+						name = "NAME_Oriens"
+						design = "NAME_Large_Space_Organism_Orange"
+					}
+					create_ship = {
+						name = "NAME_Cortus"
+						design = "NAME_Large_Space_Organism_Orange"
+					}
+					random_list = {
+						40 = { }
+						40 = {
+							create_ship = {
+								name = "NAME_Ortus"
+								design = "NAME_Large_Space_Organism_Orange"
+							}
+						}
+						20 = {
+							create_ship = {
+								name = "NAME_Ortus"
+								design = "NAME_Large_Space_Organism_Orange"
+							}
+							create_ship = {
+								name = "NAME_Ortus"
+								design = "NAME_Large_Space_Organism_Orange"
+							}
+						}
+					}
+				}
+				if = {
+					limit = { has_global_flag = idrinth_in_lategame }
+					create_ship = {
+						name = "NAME_Ortus"
+						design = "NAME_Large_Space_Organism_Orange"
+					}
+					create_ship = {
+						name = "NAME_Oriens"
+						design = "NAME_Large_Space_Organism_Orange"
+					}
+					create_ship = {
+						name = "NAME_Cortus"
+						design = "NAME_Large_Space_Organism_Orange"
+					}
+					random_list = {
+						40 = { }
+						40 = {
+							create_ship = {
+								name = "NAME_Ortus"
+								design = "NAME_Large_Space_Organism_Orange"
+							}
+						}
+						20 = {
+							create_ship = {
+								name = "NAME_Ortus"
+								design = "NAME_Large_Space_Organism_Orange"
+							}
+							create_ship = {
+								name = "NAME_Ortus"
+								design = "NAME_Large_Space_Organism_Orange"
+							}
+						}
+					}
+				}
+				fleet_event = { id = idrinthcreatures.4 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = idrinthcreatures.102
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+    immediate = {
+		create_fleet = {
+			name = "NAME_Crystalline_Entity"
+			effect = {
+				set_owner = event_target:crystal_country
+				create_ship = {
+					name = random
+					design = "crystal_ship_small_idrinth"
+				}
+				create_ship = {
+					name = random
+					design = "crystal_ship_small_idrinth"
+				}
+				create_ship = {
+					name = random
+					design = "crystal_ship_small_idrinth"
+				}
+				random_list = {
+					40 = { }
+					40 = {
+						create_ship = {
+							name = random
+							design = "crystal_ship_small_idrinth"
+						}
+					}
+					20 = {
+						create_ship = {
+							name = random
+							design = "crystal_ship_small_idrinth"
+						}
+						create_ship = {
+							name = random
+							design = "crystal_ship_small_idrinth"
+						}
+					}
+				}
+				if = {
+					limit = { has_global_flag = idrinth_in_midgame }
+					create_ship = {
+						name = random
+						design = "crystal_ship_medium_idrinth"
+					}
+					create_ship = {
+						name = random
+						design = "crystal_ship_medium_idrinth"
+					}
+					create_ship = {
+						name = random
+						design = "crystal_ship_medium_idrinth"
+					}
+					random_list = {
+						40 = { }
+						40 = {
+							create_ship = {
+								name = random
+								design = "crystal_ship_medium_idrinth"
+							}
+						}
+						20 = {
+							create_ship = {
+								name = random
+								design = "crystal_ship_medium_idrinth"
+							}
+							create_ship = {
+								name = random
+								design = "crystal_ship_medium_idrinth"
+							}
+						}
+					}
+				}
+				if = {
+					limit = { has_global_flag = idrinth_in_lategame }
+					create_ship = {
+						name = random
+						design = "crystal_ship_large_idrinth"
+					}
+					create_ship = {
+						name = random
+						design = "crystal_ship_large_idrinth"
+					}
+					create_ship = {
+						name = random
+						design = "crystal_ship_large_idrinth"
+					}
+					random_list = {
+						40 = { }
+						40 = {
+							create_ship = {
+								name = random
+								design = "crystal_ship_large_idrinth"
+							}
+						}
+						20 = {
+							create_ship = {
+								name = random
+								design = "crystal_ship_large_idrinth"
+							}
+							create_ship = {
+								name = random
+								design = "crystal_ship_large_idrinth"
+							}
+						}
+					}
+				}
+				fleet_event = { id = idrinthcreatures.4 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = idrinthcreatures.103
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+    immediate = {
+		create_fleet = {
+			name = "NAME_Ancient_Mining_Drones"
+			effect = {
+				set_owner = event_target:drone_country
+				create_ship = {
+					name = random
+					design = "mining_drone_small_idrinth"
+				}
+				create_ship = {
+					name = random
+					design = "mining_drone_small_idrinth"
+				}
+				create_ship = {
+					name = random
+					design = "mining_drone_small_idrinth"
+				}
+				random_list = {
+					40 = { }
+					40 = {
+						create_ship = {
+							name = random
+							design = "mining_drone_small_idrinth"
+						}
+					}
+					20 = {
+						create_ship = {
+							name = random
+							design = "mining_drone_small_idrinth"
+						}
+						create_ship = {
+							name = random
+							design = "mining_drone_small_idrinth"
+						}
+					}
+				}
+				if = {
+					limit = { has_global_flag = idrinth_in_midgame }
+					create_ship = {
+						name = random
+						design = "mining_drone_medium_idrinth"
+					}
+					create_ship = {
+						name = random
+						design = "mining_drone_medium_idrinth"
+					}
+					create_ship = {
+						name = random
+						design = "mining_drone_medium_idrinth"
+					}
+					random_list = {
+						40 = { }
+						40 = {
+							create_ship = {
+								name = random
+								design = "mining_drone_medium_idrinth"
+							}
+						}
+						20 = {
+							create_ship = {
+								name = random
+								design = "mining_drone_medium_idrinth"
+							}
+							create_ship = {
+								name = random
+								design = "mining_drone_medium_idrinth"
+							}
+						}
+					}
+				}
+				if = {
+					limit = { has_global_flag = idrinth_in_lategame }
+					create_ship = {
+						name = random
+						design = "mining_drone_large_idrinth"
+					}
+					create_ship = {
+						name = random
+						design = "mining_drone_large_idrinth"
+					}
+					create_ship = {
+						name = random
+						design = "mining_drone_large_idrinth"
+					}
+					random_list = {
+						40 = { }
+						40 = {
+							create_ship = {
+								name = random
+								design = "mining_drone_large_idrinth"
+							}
+						}
+						20 = {
+							create_ship = {
+								name = random
+								design = "mining_drone_large_idrinth"
+							}
+							create_ship = {
+								name = random
+								design = "mining_drone_large_idrinth"
+							}
+						}
+					}
+				}
+				fleet_event = { id = idrinthcreatures.4 }
+			}
+		}
+    }
+}
+
+country_event = {
+	id = idrinthcreatures.104
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+    immediate = {
+		create_fleet = {
+			name = "NAME_Abyssal_Host"
+			effect = {
+				set_owner = event_target:cloud_country
+				create_ship = {
+					name = random
+					design = "NAME_Cloud_Entity"
+				}
+				create_ship = {
+					name = random
+					design = "NAME_Cloud_Entity"
+				}
+				create_ship = {
+					name = random
+					design = "NAME_Cloud_Entity"
+				}
+				random_list = {
+					40 = { }
+					40 = {
+						create_ship = {
+							name = random
+							design = "NAME_Cloud_Entity"
+						}
+					}
+					20 = {
+						create_ship = {
+							name = random
+							design = "NAME_Cloud_Entity"
+						}
+						create_ship = {
+							name = random
+							design = "NAME_Cloud_Entity"
+						}
+					}
+				}
+				if = {
+					limit = { has_global_flag = idrinth_in_midgame }
+					create_ship = {
+						name = random
+						design = "NAME_Cloud_Entity"
+					}
+					create_ship = {
+						name = random
+						design = "NAME_Cloud_Entity"
+					}
+					create_ship = {
+						name = random
+						design = "NAME_Cloud_Entity"
+					}
+					random_list = {
+						40 = { }
+						40 = {
+							create_ship = {
+								name = random
+								design = "NAME_Cloud_Entity"
+							}
+						}
+						20 = {
+							create_ship = {
+								name = random
+								design = "NAME_Cloud_Entity"
+							}
+							create_ship = {
+								name = random
+								design = "NAME_Cloud_Entity"
+							}
+						}
+					}
+				}
+				if = {
+					limit = { has_global_flag = idrinth_in_lategame }
+					create_ship = {
+						name = random
+						design = "NAME_Cloud_Entity"
+					}
+					create_ship = {
+						name = random
+						design = "NAME_Cloud_Entity"
+					}
+					create_ship = {
+						name = random
+						design = "NAME_Cloud_Entity"
+					}
+					random_list = {
+						40 = { }
+						40 = {
+							create_ship = {
+								name = random
+								design = "NAME_Cloud_Entity"
+							}
+						}
+						20 = {
+							create_ship = {
+								name = random
+								design = "NAME_Cloud_Entity"
+							}
+							create_ship = {
+								name = random
+								design = "NAME_Cloud_Entity"
+							}
+						}
+					}
+				}
+				fleet_event = { id = idrinthcreatures.4 }
+			}
+		}
+    }
+}
+
+event = {
+	id = idrinthcreatures.2
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+    immediate = {
+      	set_global_flag = idrinth_in_midgame
+	}
+}
+
+event = {
+	id = idrinthcreatures.3
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+    immediate = {
+      	set_global_flag = idrinth_in_lategame
+	}
+}
+
+fleet_event = {
+	id = idrinthcreatures.4
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+    immediate = {
+		set_fleet_stance = aggressive
+		set_aggro_range_measure_from = self
+		set_aggro_range = 150
+		set_location = event_target:idrinth_creature_spawn.star
+		queue_actions = {
+			repeat = {
+				find_random_system = {
+					trigger = {
+						id = idrinthcreatures.4.moveto_selection
+					}
+					found_system = {
+						move_to = this
+					}
+				}
+			}
+		}
+	}
+}
+event = {
+	id = idrinthcreatures.5
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+	immediate = {
+		random_country = {
+			limit = {
+				is_country_type = global_event
+			}
+			country_event = {
+				id = idrinthcreatures.100
+				days = 36000
+			}
+			country_event = {
+				id = idrinthcreatures.200
+				days = 72000
+			}
+			country_event = {
+				id = idrinthcreatures.300
+				days = 108000
+			}
+			country_event = {
+				id = idrinthcreatures.400
+				days = 144000
+			}
+			country_event = {
+				id = idrinthcreatures.500
+				days = 180000
+			}
+		}
+	}
+}
+
+country_event = {
+	id = idrinthcreatures.100
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+  immediate = {
+   	set_global_flag = idrinth_past_100
+	}
+}
+
+country_event = {
+	id = idrinthcreatures.200
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+  immediate = {
+   	set_global_flag = idrinth_past_200
+	}
+}
+
+country_event = {
+	id = idrinthcreatures.300
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+  immediate = {
+   	set_global_flag = idrinth_past_300
+	}
+}
+
+country_event = {
+	id = idrinthcreatures.400
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+  immediate = {
+   	set_global_flag = idrinth_past_400
+	}
+}
+
+country_event = {
+	id = idrinthcreatures.500
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+  immediate = {
+   	set_global_flag = idrinth_past_500
+	}
+}

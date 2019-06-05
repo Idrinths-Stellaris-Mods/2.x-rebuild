@@ -1,0 +1,66 @@
+##########################################################################
+# COUNTRY ETHICS Modifiers
+##########################################################################
+
+# AUTHORITARIAN
+idrinth_fanatic_authoritarian_overlord = {
+	pop_ethic_authoritarian_attraction_mult = 0.1
+}
+idrinth_authoritarian_overlord = {
+	pop_ethic_authoritarian_attraction_mult = 0.03
+}
+
+# EGALITARIAN
+idrinth_fanatic_egalitarian_overlord = {
+	pop_ethic_egalitarian_attraction_mult = 0.1
+}
+idrinth_egalitarian_overlord = {
+	pop_ethic_egalitarian_attraction_mult = 0.03
+}
+
+# XENOPHOBE
+idrinth_fanatic_xenophobe_overlord = {
+	pop_ethic_xenophobe_attraction_mult = 0.1
+}
+idrinth_xenophobe_overlord = {
+	pop_ethic_xenophobe_attraction_mult = 0.03
+}
+
+# XENOPHILE
+idrinth_fanatic_xenophile_overlord = {
+	pop_ethic_xenophile_attraction_mult = 0.1
+}
+idrinth_xenophile_overlord = {
+	pop_ethic_xenophile_attraction_mult = 0.03
+}
+
+# MILITARIST
+idrinth_fanatic_militarist_overlord = {
+	pop_ethic_militarist_attraction_mult = 0.1
+}
+idrinth_militarist_overlord = {
+	pop_ethic_militarist_attraction_mult = 0.03
+}
+# PACIFIST
+idrinth_fanatic_pacifist_overlord = {
+	pop_ethic_pacifist_attraction_mult = 0.1
+}
+idrinth_pacifist_overlord = {
+	pop_ethic_pacifist_attraction_mult = 0.03
+}
+
+# MATERIALIST
+idrinth_fanatic_materialist_overlord = {
+	pop_ethic_pacifist_attraction_mult = 0.1
+}
+idrinth_materialist_overlord = {
+	pop_ethic_pacifist_attraction_mult = 0.03
+}
+
+# SPIRITUALIST
+idrinth_fanatic_spiritualist_overlord = {
+	pop_ethic_spiritualist_attraction_mult = 0.1
+}
+idrinth_spiritualist_overlord = {
+	pop_ethic_spiritualist_attraction_mult = 0.03
+}

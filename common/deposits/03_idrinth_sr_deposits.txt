@@ -1,0 +1,62 @@
+d_dark_matter_deposit_1 = {
+	resources = { 
+		category = orbital_mining_deposits
+		produces = {
+			sr_dark_matter = 1
+			engineering_research = 3
+			physics_research = 5
+		}
+	}
+	station = shipclass_research_station 
+	is_for_colonizeable = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10
+			is_planet_class = pc_black_hole
+		}
+		modifier = {
+			factor = 0.5
+			is_inside_nebula = no
+		}		
+	}
+}
+
+d_dark_matter_deposit_2 = {
+	resources = { 
+		category = orbital_research_deposits
+		produces = {
+			sr_dark_matter = 2
+			engineering_research = 4
+			physics_research = 6
+		}
+	}
+	station = shipclass_research_station 
+	is_for_colonizeable = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			is_planet_class = pc_black_hole
+		}
+	}
+}
+
+d_dark_matter_deposit_3 = {
+	resources = { 
+		category = orbital_research_deposits
+		produces = {
+			sr_dark_matter = 3
+			engineering_research = 5
+			physics_research = 7
+		}
+	}
+	station = shipclass_research_station 
+	is_for_colonizeable = no
+	
+	drop_weight = {
+		weight = 0	
+	}
+}

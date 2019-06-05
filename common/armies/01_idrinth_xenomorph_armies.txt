@@ -1,0 +1,60 @@
+siege_xenomorph_army = {
+	damage = 2.20
+	health = 2.00
+	morale_damage = 2.20
+	collateral_damage = 5.50
+	war_exhaustion = 0.25
+	has_morale = no
+	time = 100
+	icon_frame = 8
+	has_species = no
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 2
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+tactical_xenomorph_army = {
+	damage = 2.00
+	health = 2.20
+	morale_damage = 2.00
+	collateral_damage = 4.00
+	war_exhaustion = 0.25
+	has_morale = no
+	time = 100
+	icon_frame = 8
+	has_species = no
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 2
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+black_ops_xenomorph_army = {
+	damage = 2.00
+	health = 1.80
+	morale_damage = 2.40
+	collateral_damage = 4.50
+	war_exhaustion = 0.25
+	has_morale = no
+	time = 100
+	icon_frame = 8
+	has_species = no
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 2
+		}
+	}
+	potential = {
+		always = no
+	}
+}

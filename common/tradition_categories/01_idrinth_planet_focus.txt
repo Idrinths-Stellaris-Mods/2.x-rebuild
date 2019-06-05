@@ -1,0 +1,11 @@
+tradition_idrinth_planet_focus = {
+	adoption_bonus = "tr_idrinth_planet_focus_adoption"
+	finish_bonus = "tr_idrinth_planet_focus_finish"
+	traditions = {
+		"tr_idrinth_planet_focus_more_districts"
+		"tr_idrinth_planet_focus_growth_encouraged"
+		"tr_idrinth_planet_focus_improved_buildings"
+		"tr_idrinth_planet_focus_breaking_before_the_army"
+		"tr_idrinth_planet_focus_unified_communication"
+	}
+}

@@ -1,0 +1,11 @@
+tradition_idrinth_genetic_enhancements = {
+	adoption_bonus = "tr_idrinth_genetic_enhancements_adopt"
+	finish_bonus = "tr_idrinth_genetic_enhancements_finish"
+	traditions = {
+		"tr_idrinth_genetic_enhancements_resilence"
+		"tr_idrinth_genetic_enhancements_selective_mating"
+		"tr_idrinth_genetic_enhancements_reduced_needs"
+		"tr_idrinth_genetic_enhancements_bread_for_war"
+		"tr_idrinth_genetic_enhancements_better_selection"
+	}
+}

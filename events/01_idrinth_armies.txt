@@ -1,0 +1,220 @@
+namespace = idrinth_armies
+
+country_event = {
+	id = idrinth_armies.100
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			if = {
+				limit = { has_modifier = "idrinth_armies_won_defense" }
+			}
+			remove_modifier = "idrinth_armies_won_defense"
+		}
+	}
+}
+country_event = {# attacker lose
+	id = idrinth_armies.200
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+	immediate = {
+		add_modifier = { modifier = idrinth_armies_failed_invasion days = 360 }
+	}
+}
+
+country_event = {#defender wins
+	id = idrinth_armies.300
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+	immediate = {
+		FromFrom = {
+			add_modifier = { modifier = idrinth_armies_won_defense days = 720 }
+		}
+	}
+}
+
+planet_event = {
+	id = idrinth_armies.400
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			random_list = {
+				1 = {
+					switch = {
+						trigger = army_type
+						assault_army = {
+							modify_army = {
+								type = "siege_assault_army"
+							}
+						}
+						slave_army = {
+							modify_army = {
+								type = "siege_slave_army"
+							}
+						}
+						clone_army = {
+							modify_army = {
+								type = "siege_clone_army"
+							}
+						}
+						robotic_army = {
+							modify_army = {
+								type = "siege_robotic_army"
+							}
+						}
+						psionic_army = {
+							modify_army = {
+								type = "siege_psionic_army"
+							}
+						}
+						xenomorph_army = {
+							modify_army = {
+								type = "siege_xenomorph_army"
+							}
+						}
+						gene_warrior_army = {
+							modify_army = {
+								type = "siege_gene_warrior_army"
+							}
+						}
+						machine_assault_1 = {
+							modify_army = {
+								type = "siege_machine_assault_1"
+							}
+						}
+						machine_assault_2 = {
+							modify_army = {
+								type = "siege_machine_assault_2"
+							}
+						}
+						machine_assault_3 = {
+							modify_army = {
+								type = "siege_machine_assault_3"
+							}
+						}
+					}
+				} 
+				1 = {
+					switch = {
+						trigger = army_type
+						assault_army = {
+							modify_army = {
+								type = "tactical_assault_army"
+							}
+						}
+						slave_army = {
+							modify_army = {
+								type = "tactical_slave_army"
+							}
+						}
+						clone_army = {
+							modify_army = {
+								type = "tactical_clone_army"
+							}
+						}
+						robotic_army = {
+							modify_army = {
+								type = "tactical_robotic_army"
+							}
+						}
+						psionic_army = {
+							modify_army = {
+								type = "tactical_psionic_army"
+							}
+						}
+						xenomorph_army = {
+							modify_army = {
+								type = "tactical_xenomorph_army"
+							}
+						}
+						gene_warrior_army = {
+							modify_army = {
+								type = "tactical_gene_warrior_army"
+							}
+						}
+						machine_assault_1 = {
+							modify_army = {
+								type = "tactical_machine_assault_1"
+							}
+						}
+						machine_assault_2 = {
+							modify_army = {
+								type = "tactical_machine_assault_2"
+							}
+						}
+						machine_assault_3 = {
+							modify_army = {
+								type = "tactical_machine_assault_3"
+							}
+						}
+					}
+				} 
+				1 = {
+					switch = {
+						trigger = army_type
+						assault_army = {
+							modify_army = {
+								type = "black_ops_assault_army"
+							}
+						}
+						slave_army = {
+							modify_army = {
+								type = "black_ops_slave_army"
+							}
+						}
+						clone_army = {
+							modify_army = {
+								type = "black_ops_clone_army"
+							}
+						}
+						robotic_army = {
+							modify_army = {
+								type = "black_ops_robotic_army"
+							}
+						}
+						psionic_army = {
+							modify_army = {
+								type = "black_ops_psionic_army"
+							}
+						}
+						xenomorph_army = {
+							modify_army = {
+								type = "black_ops_xenomorph_army"
+							}
+						}
+						gene_warrior_army = {
+							modify_army = {
+								type = "black_ops_gene_warrior_army"
+							}
+						}
+						machine_assault_1 = {
+							modify_army = {
+								type = "black_ops_machine_assault_1"
+							}
+						}
+						machine_assault_2 = {
+							modify_army = {
+								type = "black_ops_machine_assault_2"
+							}
+						}
+						machine_assault_3 = {
+							modify_army = {
+								type = "black_ops_machine_assault_3"
+							}
+						}
+					}
+				} 
+				3 = {} 
+			}
+		}
+	}
+}

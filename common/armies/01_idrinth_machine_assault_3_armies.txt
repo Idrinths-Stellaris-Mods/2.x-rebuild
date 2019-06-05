@@ -1,0 +1,60 @@
+siege_machine_assault_3 = {
+	damage = 4.40
+	health = 6.00
+	has_morale = no
+	morale_damage = 1.65
+	collateral_damage = 4.40
+	war_exhaustion = 4.0
+	time = 500
+	has_species = no
+	icon_frame = 11
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 8
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+tactical_machine_assault_3 = {
+	damage = 4.00
+	health = 6.60
+	has_morale = no
+	morale_damage = 1.50
+	collateral_damage = 3.20
+	war_exhaustion = 4.0
+	time = 500
+	has_species = no
+	icon_frame = 11
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 8
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+black_ops_machine_assault_3 = {
+	damage = 4.00
+	health = 5.40
+	has_morale = no
+	morale_damage = 1.80
+	collateral_damage = 3.60
+	war_exhaustion = 4.0
+	time = 500
+	has_species = no
+	icon_frame = 11
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 8
+		}
+	}
+	potential = {
+		always = no
+	}
+}

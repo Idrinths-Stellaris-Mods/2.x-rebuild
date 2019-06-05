@@ -1,0 +1,63 @@
+namespace = idrinth_lanes
+
+event = {
+	id = idrinth_lanes.1
+	hide_window = yes
+	location = ROOT
+	is_triggered_only = yes
+	
+	immediate = {
+	random_list = {
+			1 = { }
+			1 = {
+				random_system = {
+					random_list = {
+						200 = {
+							modifier = {
+								has_global_flag = idrinth_in_midgame
+								factor = 1.5
+							}
+							modifier = {
+								has_global_flag = idrinth_in_lategame
+								factor = 1.5
+							}
+							random_neighbor_system = {
+								ignore_hyperlanes = yes
+								limit = { NOT = { has_hyperlane_to = PREV } }
+								add_hyperlane = { from = THIS to = Prev }
+								log = "[This.GetName] -> [PREV.GetName] added"
+							}
+						}
+						100 = {
+							random_neighbor_system = {
+								ignore_hyperlanes = no
+								limit = {
+									any_system = {
+										AND = {
+											has_hyperlane_to = Prev
+											NOT = { is_same_value = PrevPrev }
+										}
+									}
+									has_natural_wormhole = yes
+								}
+								remove_hyperlane = { from = This to = Prev }
+								log = "[This.GetName] -> [PREV.GetName] removed"
+							}
+						}
+						1 = {
+							spawn_system = {
+								min_distance = 5
+								max_distance = 95
+								initializer = random
+								hyperlane=yes
+								is_discovered=no
+							}
+							log = "[This.GetName] -> new system"
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

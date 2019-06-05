@@ -1,0 +1,118 @@
+######################################################
+# COUNTRY MODIFIER BEFORE MIDGAME
+######################################################
+idrinth_grand_admiral_earlygame_subject = {
+	stations_produces_mult = 0.25
+	planet_jobs_produces_mult = 0.251
+	country_naval_cap_mult = 0.15
+	ships_upkeep_mult = -0.1
+	starbase_shipyard_build_cost_mult = -0.1
+	planet_stability_add = 5
+}
+
+idrinth_admiral_earlygame_subject = {
+	stations_produces_mult = 0.1875
+	planet_jobs_produces_mult = 0.1875
+	country_naval_cap_mult = 0.1125
+	ships_upkeep_mult = -0.075
+	starbase_shipyard_build_cost_mult = -0.075
+	planet_stability_add = 3.75
+}
+
+idrinth_commodore_earlygame_subject = {
+	stations_produces_mult = 0.125
+	planet_jobs_produces_mult = 0.125
+	country_naval_cap_mult = 0.075
+	ships_upkeep_mult = -0.05
+	starbase_shipyard_build_cost_mult = -0.05
+	planet_stability_add = 2.5
+}
+
+idrinth_captain_earlygame_subject = {
+	stations_produces_mult = 0.0625
+	planet_jobs_produces_mult = 0.0625
+	country_naval_cap_mult = 0.0375
+	ships_upkeep_mult = -0.025
+	starbase_shipyard_build_cost_mult = -0.025
+	planet_stability_add = 1.25
+}
+
+######################################################
+# COUNTRY MODIFIER IN MIDGAME
+######################################################
+
+idrinth_grand_admiral_midgame_subject = {
+	stations_produces_mult = 0.5
+	planet_jobs_produces_mult = 0.5
+	country_naval_cap_mult = 0.3
+	ships_upkeep_mult = -0.2
+	starbase_shipyard_build_cost_mult = -0.2
+	planet_stability_add = 10
+}
+
+idrinth_admiral_midgame_subject = {
+	stations_produces_mult = 0.375
+	planet_jobs_produces_mult = 0.375
+	country_naval_cap_mult = 0.275
+	ships_upkeep_mult = -0.15
+	starbase_shipyard_build_cost_mult = -0.15
+	planet_stability_add = 7.5
+}
+
+idrinth_commodore_midgame_subject = {
+	stations_produces_mult = 0.25
+	planet_jobs_produces_mult = 0.25
+	country_naval_cap_mult = 0.15
+	ships_upkeep_mult = -0.1
+	starbase_shipyard_build_cost_mult = -0.1
+	planet_stability_add = 5
+}
+
+idrinth_captain_midgame_subject = {
+	stations_produces_mult = 0.125
+	planet_jobs_produces_mult = 0.125
+	country_naval_cap_mult = 0.075
+	ships_upkeep_mult = -0.05
+	starbase_shipyard_build_cost_mult = -0.05
+	planet_stability_add = 2.5
+}
+
+######################################################
+# COUNTRY MODIFIER IN ENDGAME
+######################################################
+
+idrinth_grand_admiral_endgame_subject = {
+	stations_produces_mult = 1
+	planet_jobs_produces_mult = 1
+	country_naval_cap_mult = 0.6
+	ships_upkeep_mult = -0.4
+	starbase_shipyard_build_cost_mult = -0.4
+	planet_stability_add = 20
+}
+
+idrinth_admiral_endgame_subject = {
+	stations_produces_mult = 0.75
+	planet_jobs_produces_mult = 0.75
+	country_naval_cap_mult = 0.45
+	ships_upkeep_mult = -0.3
+	starbase_shipyard_build_cost_mult = -0.3
+	planet_stability_add = 15
+}
+
+idrinth_commodore_endgame_subject = {
+	stations_produces_mult = 0.5
+	planet_jobs_produces_mult = 0.5
+	country_naval_cap_mult = 0.3
+	ships_upkeep_mult = -0.2
+	starbase_shipyard_build_cost_mult = -0.2
+	planet_stability_add = 10
+}
+
+idrinth_captain_endgame_subject = {
+	stations_produces_mult = 0.25
+	planet_jobs_produces_mult = 0.25
+	country_naval_cap_mult = 0.15
+	ships_upkeep_mult = -0.1
+	starbase_shipyard_build_cost_mult = -0.1
+	planet_stability_add = 5
+}

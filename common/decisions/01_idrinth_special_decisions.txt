@@ -1,0 +1,245 @@
+decision_planet_idrinth_planet_expanded = {
+	owned_planets_only = yes
+
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			influence = 10
+			unity = 100
+			energy = 5000
+			minerals = 7500
+		}
+	}
+	
+	potential = {
+		owner = {
+			has_technology = "tech_terrestrial_sculpting"
+		}
+		planet_size = 78
+	}
+	
+	effect = {
+		custom_tooltip = decision_prospect_effects_short
+		hidden_effect = {
+			add_modifier = { modifier = "idrinth_planet_expanding" days = 120 }
+			add_modifier = { modifier = "idrinth_planet_expanded" }
+		}
+	}
+	
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = 0
+			num_pops < 20
+		}
+		modifier = {
+			factor = 0.5
+			num_pops < 40
+		}
+	}	
+}
+decision_planet_idrinth_planet_size = {
+	owned_planets_only = yes
+
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			influence = 10
+			energy = 500
+			minerals = 5000
+		}
+		cost = {
+			trigger = {
+				planet_size > 10
+			}
+			energy = 100
+			minerals = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size > 15
+			}
+			energy = 100
+			minerals = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size > 20
+			}
+			energy = 100
+			minerals = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size > 25
+			}
+			energy = 100
+			minerals = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size > 30
+			}
+			energy = 100
+			minerals = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size > 35
+			}
+			energy = 100
+			minerals = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size > 40
+			}
+			energy = 100
+			minerals = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size > 45
+			}
+			energy = 100
+			minerals = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size > 50
+			}
+			energy = 100
+			minerals = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size > 55
+			}
+			energy = 100
+			minerals = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size > 60
+			}
+			energy = 100
+			minerals = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size > 65
+			}
+			energy = 100
+			minerals = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size > 70
+			}
+			energy = 100
+			minerals = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size > 75
+			}
+			energy = 100
+			minerals = 1000
+		}
+	}
+	
+	potential = {
+		owner = {
+			has_technology = "tech_terrestrial_sculpting"
+		}
+		planet_size < 77
+		NOT = { has_modifier = "idrinth_planet_size_add" }
+	}
+	
+	effect = {
+        planet_event = { id = idrinthplanetmodifications.1 }
+		hidden_effect = {
+			add_modifier = { modifier = "idrinth_planet_size_add"  days = 720}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			num_pops < 20
+		}
+		modifier = {
+			factor = 0.5
+			num_pops < 40
+		}
+		modifier = {
+			factor = 1.5
+			planet_size < 10
+		}
+		modifier = {
+			factor = 1.5
+			planet_size < 13
+		}
+	}	
+}
+decision_planet_idrinth_planet_habitability = {
+	owned_planets_only = yes
+
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 5000
+		}
+	}
+	
+	potential = {
+		owner = {
+			has_technology = "tech_climate_restoration"
+		}
+		NOT = { has_modifier = idrinth_habiltability }
+	}
+	
+	effect = {
+		hidden_effect = {
+			add_modifier = { modifier = "idrinth_habiltability"}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+	}	
+}
+
+decision_planet_idrinth_planet_habitability_2 = {
+	owned_planets_only = yes
+
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 15000
+		}
+	}
+	
+	potential = {
+		owner = {
+			has_technology = "tech_climate_restoration"
+		}
+		NOT = { has_modifier = idrinth_habiltability2 }
+		has_modifier = idrinth_habiltability
+	}
+	
+	effect = {
+		hidden_effect = {
+			add_modifier = { modifier = "idrinth_habiltability2"}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+	}	
+}

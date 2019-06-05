@@ -1,0 +1,57 @@
+siege_assault_army = {
+	damage = 1.10
+	health = 1.00
+	morale = 0.70
+	morale_damage = 1.10
+	collateral_damage = 1.10
+	war_exhaustion = 1.00
+	time = 90
+	icon_frame = 2
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 1
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+tactical_assault_army = {
+	damage = 1.00
+	health = 1.10
+	morale = 1.10
+	morale_damage = 1.00
+	collateral_damage = 0.80
+	war_exhaustion = 1.00
+	time = 90
+	icon_frame = 2
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 1
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+black_ops_assault_army = {
+	damage = 1.00
+	health = 0.90
+	morale = 1.00
+	morale_damage = 1.20
+	collateral_damage = 0.90
+	war_exhaustion = 1.00
+	time = 90
+	icon_frame = 2
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 1
+		}
+	}
+	potential = {
+		always = no
+	}
+}

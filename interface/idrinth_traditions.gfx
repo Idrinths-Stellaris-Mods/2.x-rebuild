@@ -1,0 +1,66 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tr_idrinth_genetic_enhancements_resilence"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_idrinth_genetic_enhancements_selective_mating"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_idrinth_genetic_enhancements_reduced_needs"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_idrinth_genetic_enhancements_bread_for_war"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_idrinth_genetic_enhancements_better_selection"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+
+	
+	spriteType = {
+		name = "GFX_tr_idrinth_leaders_eternal_service"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_idrinth_leaders_improved_training"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_idrinth_leaders_better_benefits"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_idrinth_leaders_organized_ministries"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_idrinth_leaders_better_selection"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+
+	
+	spriteType = {
+		name = "GFX_tr_idrinth_planet_focus_more_districts"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_idrinth_planet_focus_growth_encouraged"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_idrinth_planet_focus_improved_buildings"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_idrinth_planet_focus_breaking_before_the_army"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_idrinth_planet_focus_unified_communication"
+		textureFile = "gfx/interface/icons/traditions/tradition_domination_colonial_viceroys.dds"
+	}
+}

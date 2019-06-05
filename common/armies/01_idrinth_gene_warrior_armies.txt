@@ -1,0 +1,57 @@
+siege_gene_warrior_army = {
+	damage = 2.20
+	health = 2.50
+	morale = 1.75
+	morale_damage = 1.10
+	collateral_damage = 0.825
+	war_exhaustion = 3.0
+	time = 150
+	icon_frame = 6
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 3
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+tactical_gene_warrior_army = {
+	damage = 2.00
+	health = 2.75
+	morale = 2.75
+	morale_damage = 1.00
+	collateral_damage = 0.60
+	war_exhaustion = 3.0
+	time = 150
+	icon_frame = 6
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 3
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+black_ops_gene_warrior_army = {
+	damage = 2.00
+	health = 2.25
+	morale = 2.50
+	morale_damage = 1.20
+	collateral_damage = 0.675
+	war_exhaustion = 3.0
+	time = 150
+	icon_frame = 6
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 3
+		}
+	}
+	potential = {
+		always = no
+	}
+}

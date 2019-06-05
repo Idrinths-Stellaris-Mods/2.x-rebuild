@@ -1,0 +1,57 @@
+siege_slave_army = {
+	damage = 1.10
+	health = 1.00
+	morale = 0.525
+	morale_damage = 0.825
+	collateral_damage = 1.65
+	war_exhaustion = 0.5
+	time = 60
+	icon_frame = 10
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 0.5
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+tactical_slave_army = {
+	damage = 1.00
+	health = 1.10
+	morale = 0.825
+	morale_damage = 0.75
+	collateral_damage = 1.2
+	war_exhaustion = 0.5
+	time = 60
+	icon_frame = 10
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 0.5
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+black_ops_slave_army = {
+	damage = 1.00
+	health = 0.90
+	morale = 0.75
+	morale_damage = 0.90
+	collateral_damage = 1.35
+	war_exhaustion = 0.5
+	time = 60
+	icon_frame = 10
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 0.5
+		}
+	}
+	potential = {
+		always = no
+	}
+}
